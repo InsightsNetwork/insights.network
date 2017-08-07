@@ -1,0 +1,47 @@
+// apply a natural box layout model to all elements, but allowing components to change
+// from https://www.paulirish.com/2012/box-sizing-border-box-ftw/
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+header .menu-link {
+  float: right;
+}
+
+header nav {
+  display: none;
+}
+
+footer ul.social-media li {
+  display: inline-block;
+}
+
+footer ul.social-media li span {
+  display: none;
+}
+
+footer ul.social-media li a {
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+}
+
+footer ul.social-media li.twitter a {
+  background: url("../img/logo-twitter.svg") no-repeat top left;
+}
+
+footer ul.social-media li.medium a {
+  background: url("../img/logo-medium.svg") no-repeat top left;
+}
+
+footer ul.social-media li.slack a {
+  background: url("../img/logo-slack.svg") no-repeat top left;
+}
+
+footer ul.social-media li.reddit a {
+  background: url("../img/logo-reddit.svg") no-repeat top left;
+}

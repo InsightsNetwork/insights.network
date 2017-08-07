@@ -1,0 +1,104 @@
+.wrapper {
+  margin: 0 auto;
+  width: 92.5%;
+}
+
+header {
+  background: #222;
+  padding: 20px 0;
+}
+
+header nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hero {
+  background: #222;
+  padding: 20px 0;
+}
+
+.hero h1 {
+  margin-bottom: 25px;
+}
+
+.hero ul.links {
+  padding-left: 0;
+  text-align: center;
+}
+
+.hero ul.links li {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0 10px 20px;
+}
+
+.hero ul.links a {
+  padding: 3px 1px 3px 30px;
+}
+
+.hero ul.links .icon-video a {
+  background: url("../img/icon-video.svg") no-repeat top left;
+  padding-top: 1px;
+}
+
+.hero ul.links .icon-whitepaper a {
+  background: url("../img/icon-whitepaper.svg") no-repeat top left;
+}
+
+.hero ul.links .icon-wallet a {
+  background: url("../img/icon-wallet.svg") no-repeat top left;
+  padding-left: 35px;
+}
+
+.hero .scroll-down a {
+  background: url("../img/scroll-down.svg") no-repeat top left;
+  background-size: 20px 11px;
+  display: block;
+  height: 11px;
+  margin: 0 auto;
+  width: 20px;
+}
+
+.hero .scroll-down span {
+  display: none;
+}
+
+.features,
+.wallet,
+.how-it-works,
+.use-cases,
+.testimonials {
+  padding: 35px 0;
+}
+
+.wallet {
+  background: #eee;
+}
+
+.how-it-works {
+  border-bottom: 1px solid #eee;
+}
+
+.testimonials {
+  background: #222;
+}
+
+footer {
+  background: #111;
+  color: #757575;
+  padding: 35px 0;
+}
+
+footer ul {
+  padding-left: 0;
+}
+
+footer li {
+  margin-bottom: 10px;
+}
+
+footer ul.social-media {
+  margin-bottom: 0;
+}

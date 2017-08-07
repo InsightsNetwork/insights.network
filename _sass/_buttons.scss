@@ -1,0 +1,44 @@
+.button {
+  background: #fff;
+  border-radius: 6px;
+  color: #1a1a1a;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 12px 20px;
+  text-transform: uppercase;
+}
+
+.button-outline {
+  border: 1px solid #ddd;
+}
+
+nav .button a {
+  padding: 12px 50px;
+}
+
+.wallet-buttons a {
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: 20px center;
+  display: inline-block;
+  padding-left: 50px;
+  margin: 10px;
+}
+
+.button-linux {
+  background-image: url("../img/logo-linux.svg");
+}
+
+.button-mac {
+  background-image: url("../img/logo-apple.svg");
+}
+
+.button-windows {
+  background-image: url("../img/logo-windows.svg");
+}
+
+.testimonials .button {
+  background-color: transparent;
+  border: 1px solid #444;
+  color: #fff;
+}

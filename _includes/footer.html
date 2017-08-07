@@ -1,0 +1,74 @@
+<footer>
+  <div class="wrapper">
+    <p class="copyright">{{ site.title }} &copy; {{ "now" | date: "%Y" }}</p>
+    <ul class="footer-links">
+      <li>
+        <a href="#">Wallet</a>
+      </li>
+      <li>
+        <a href="#">Blockchain Explorer</a>
+      </li>
+      <li>
+        <a href="#">Compliance</a>
+      </li>
+      <li>
+        <a href="#">About</a>
+      </li>
+      <li>
+        <a href="#">Development</a>
+      </li>
+      <li>
+        <a href="#">Terms</a>
+      </li>
+      <li>
+        <a href="#">Privacy</a>
+      </li>
+    </ul>
+    <ul class="social-media">
+      {% if site.twitter_username %}
+        <li class="twitter">
+          <a href="http://twitter.com/{{ site.twitter_username }}"><span>Twitter</span></a>
+        </li>
+      {% endif %}
+      {% if site.medium_url %}
+        <li class="medium">
+          <a href="http://medium.com/{{ site.medium_url }}"><span>Medium</span></a>
+        </li>
+      {% endif %}
+      {% if site.facebook_url %}
+        <li class="facebook">
+          <a href="http://facebook.com/{{ site.facebook_url }}"><span>Facebook</span></a>
+        </li>
+      {% endif %}
+      {% if site.instagram_username %}
+        <li class="instagram">
+          <a href="http://instagram.com/{{ site.instagram_username }}"><span>Instagram</span></a>
+        </li>
+      {% endif %}
+      {% if site.slack_url %}
+        <li class="slack">
+          <a href="http://slack.com/{{ site.slack_url }}"><span>Slack</span></a>
+        </li>
+      {% endif %}
+      {% if site.reddit_url %}
+        <li class="reddit">
+          <a href="http://reddit.com/r/{{ site.reddit_url }}"><span>Reddit</span></a>
+        </li>
+      {% endif %}
+    </ul>
+  </div><!--.wrapper-->
+</footer>
+{% if site.google_analytics %}
+  <script>
+    (function(window, variableName) {
+      window.GoogleAnalyticsObject = variableName;
+      window[variableName] = window[variableName] || function() {
+        (window[variableName].q = window[variableName].q || []).push(arguments);
+      };
+      window[variableName].l = 1 * new Date();
+    })(window, 'ga');
+    ga('create', "{{ site.google_analytics }}");
+    ga('send', 'pageview');
+  </script>
+  <script async src='//www.google-analytics.com/analytics.js'></script>
+{% endif %}
