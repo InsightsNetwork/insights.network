@@ -16,6 +16,10 @@ header nav {
   display: none;
 }
 
+header nav {
+  backdrop-filter: blur(10px);
+}
+
 footer ul.social-media li {
   display: inline-block;
 }
