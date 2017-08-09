@@ -1,6 +1,7 @@
 .wrapper {
   margin: 0 auto;
   width: 92.5%;
+  max-width: 1200px;
 }
 
 header {
@@ -223,6 +224,16 @@ footer ul.social-media {
     }
   }
 
+  .how-it-works ol {
+    float: left;
+    width: 33%;
+  }
+
+  .how-it-works .content {
+    float: right;
+    width: 66%;
+  }
+
   .testimonials .testimonial {
     clear: none;
     float: left;
@@ -235,7 +246,7 @@ footer ul.social-media {
 
 @media (min-width: 1024px) {
   .hero .hero-image {
-    margin: 8vh auto;
+    margin: 5vh auto;
     max-width: 50%;
   }
 

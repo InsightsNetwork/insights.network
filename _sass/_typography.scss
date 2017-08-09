@@ -2,6 +2,9 @@ body {
   color: #1a1a1a;
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 12px;
+  text-rendering: optimizeLegibility;
+  // -webkit-font-smoothing: antialiased;
+  // -moz-osx-font-smoothing: grayscale;
 }
 
 header {
@@ -35,6 +38,9 @@ header nav a {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: .93px;
+  &:hover {
+    color: #eee;
+  }
 }
 
 footer p {
@@ -49,6 +55,9 @@ footer ul li {
 
 footer ul li a {
   color: #757575;
+  &:hover {
+    color: #eee;
+  }
 }
 
 h1,
@@ -101,6 +110,10 @@ h3 {
   color: #d5d5d5;
 }
 
+.how-it-works ol li.active {
+  font-weight: 700;
+}
+
 .testimonials {
   color: #eaeaea;
 }
@@ -116,14 +129,17 @@ h3 {
 @media (min-width: 768px) {
   body {
     font-size: 14px;
+    letter-spacing: -.2px;
   }
 
   h2 {
     font-size: 24px;
+    letter-spacing: .5px;
   }
 
   h3 {
     font-size: 18px;
+    letter-spacing: -.5px;
   }
 
   header nav a {
@@ -136,6 +152,7 @@ h3 {
 
   .hero h1 {
     font-size: 24px;
+    letter-spacing: 1px;
     line-height: 1.5;
   }
 
@@ -148,6 +165,11 @@ h3 {
 
   h2 {
     font-size: 32px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+    line-height: 1.5;
   }
 
 }

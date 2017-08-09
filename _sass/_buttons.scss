@@ -23,11 +23,17 @@
   margin: 0 auto;
 }
 
+nav .button {
+  padding: 0;
+}
+
 nav .button a {
   color: #222;
-  // padding: 12px 50px;
+  display: block;
+  padding: 12px 30px;
   &:hover,
   &:active {
+    color: #1a1a1a;
     text-decoration: none;
   }
 }
@@ -76,9 +82,17 @@ nav .button a {
 }
 
 @media (min-width: 768px) {
+  .use-cases .button {
+    max-width: 308px;
+  }
 
+  .testimonials .button {
+    max-width: 248px;
+  }
 }
 
 @media (min-width: 1024px) {
-
+  nav .button a {
+    padding: 12px 50px;
+  }
 }
