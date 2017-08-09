@@ -8,16 +8,32 @@ html {
   box-sizing: inherit;
 }
 
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
 header .menu-link {
   float: right;
 }
 
 header nav {
   display: none;
-}
-
-header nav {
-  backdrop-filter: blur(10px);
 }
 
 footer ul.social-media li {
@@ -60,4 +76,59 @@ footer ul.social-media li.reddit a {
 
 .hide-mobile {
   display: none;
+}
+
+@media (min-width: 480px) {
+}
+
+@media (min-width: 768px) {
+  header nav {
+    display: block;
+  }
+
+  header nav li,
+  header nav li.button {
+    display: inline-block;
+  }
+
+  .copyright.hide-mobile {
+    display: inline-block;
+    float: left;
+  }
+
+  footer ul.footer-links {
+    float: left;
+  }
+
+  footer ul.footer-links li {
+    display: inline;
+    font-size: 12px;
+    margin-left: 15px;
+  }
+
+  footer p,
+  footer ul,
+  footer ul li {
+    margin-bottom: 0;
+  }
+
+  footer ul.social-media {
+    float: right;
+  }
+
+  .hide-mobile {
+    display: block;
+  }
+
+  .show-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+
+}
+
+@media (min-width: 1200px) {
+
 }

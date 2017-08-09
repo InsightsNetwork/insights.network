@@ -102,7 +102,8 @@ header nav ul {
 }
 
 .wallet-screenshots {
-  margin: 10px 0;
+  display: block;
+  margin: 10px auto;
   max-width: 1000px;
   width: 100%;
 }
@@ -118,6 +119,8 @@ header nav ul {
 }
 
 .how-it-works .map {
+  display: block;
+  margin: 0 auto;
   max-width: 1000px;
   width: 100%;
 }
@@ -141,6 +144,7 @@ header nav ul {
 }
 
 .testimonials .testimonial {
+  clear: left;
   margin: 20px 0;
 }
 
@@ -174,4 +178,81 @@ footer li {
 
 footer ul.social-media {
   margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  header nav {
+    float: right;
+    margin-top: 0;
+  }
+
+  header nav li,
+  header nav li.button {
+    margin: 0 0 0 18px;
+  }
+
+  header nav li:first-child {
+    margin-left: 0;
+  }
+
+  .hero h2 {
+    margin-top: 15px;
+  }
+
+  .hero h1 {
+    margin-bottom: 40px;
+  }
+
+  .hero ul.links li {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .features .feature,
+  .use-cases .use-case {
+    width: 48%;
+    float: left;
+    &:nth-child(2) {
+      float: right;
+    }
+    &:nth-child(4) {
+      clear: both;
+      float: none;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+
+  .testimonials .testimonial {
+    clear: none;
+    float: left;
+    width: 46%;
+    &:nth-child(2) {
+      margin-right: 8%;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero .hero-image {
+    margin: 8vh auto;
+    max-width: 50%;
+  }
+
+  .features .feature,
+  .use-cases .use-case {
+    // clear: none !important;
+    float: left !important;
+    margin-right: 5%;
+    margin-left: 0;
+    width: 30%;
+    &:nth-child(4) {
+      clear: none;
+      margin-right: 0;
+    }
+  }
+
+  .features .feature img {
+    margin-bottom: 20px;
+  }
 }

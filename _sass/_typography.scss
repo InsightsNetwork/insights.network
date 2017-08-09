@@ -71,19 +71,19 @@ h3 {
   font-weight: 500;
 }
 
-.home .hero h1,
-.home .hero h2 {
+.hero h1,
+.hero h2 {
   text-align: center;
 }
 
-.home .hero h1 {
+.hero h1 {
   color: #fff;
   font-size: 18px;
   font-weight: 300;
   line-height: 24px;
 }
 
-.home .hero h2 {
+.hero h2 {
   color: #888;
   font-size: 10px;
   font-weight: 500;
@@ -107,4 +107,47 @@ h3 {
 
 .testimonials h2 {
   color: #fff;
+}
+
+@media (min-width: 480px) {
+
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  header nav a {
+    font-size: 13px;
+  }
+
+  .hero h2 {
+    font-size: 12px;
+  }
+
+  .hero h1 {
+    font-size: 24px;
+    line-height: 1.5;
+  }
+
+  .testimonials .testimonial .quote {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  h2 {
+    font-size: 32px;
+  }
+
 }
