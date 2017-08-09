@@ -9,20 +9,20 @@ header {
 }
 
 header a.logo {
-  background-color: #444444;
+  background-color: #444;
   color: #535353;
+  display: inline-block;
   font-size: 10px;
   font-weight: 600;
   padding: 9px 8px;
   text-transform: uppercase;
 }
 
-header nav {
-  margin: 20px 0;
-}
-
 header nav li {
   margin-bottom: 15px;
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 header nav li.button {
@@ -84,7 +84,7 @@ h3 {
 }
 
 .home .hero h2 {
-  color: #888888;
+  color: #888;
   font-size: 10px;
   font-weight: 500;
   letter-spacing: 3px;

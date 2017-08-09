@@ -1,6 +1,6 @@
 <footer>
   <div class="wrapper">
-    <p class="copyright">{{ site.title }} &copy; {{ "now" | date: "%Y" }}</p>
+    <p class="copyright hide-mobile">{{ site.title }} &copy; {{ "now" | date: "%Y" }}</p>
     <ul class="footer-links">
       <li>
         <a href="#">Wallet</a>
@@ -56,6 +56,7 @@
         </li>
       {% endif %}
     </ul>
+    <p class="copyright show-mobile">{{ site.title }} &copy; {{ "now" | date: "%Y" }}</p>
   </div><!--.wrapper-->
 </footer>
 {% if site.google_analytics %}

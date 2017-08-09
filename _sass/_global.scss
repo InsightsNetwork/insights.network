@@ -49,3 +49,15 @@ footer ul.social-media li.slack a {
 footer ul.social-media li.reddit a {
   background: url("../img/logo-reddit.svg") no-repeat top left;
 }
+
+.responsive-img {
+  width: 100%;
+}
+
+.show-mobile {
+  display: block;
+}
+
+.hide-mobile {
+  display: none;
+}

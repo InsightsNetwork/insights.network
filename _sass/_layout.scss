@@ -8,6 +8,10 @@ header {
   padding: 20px 0;
 }
 
+header nav {
+  margin: 25px 0 0;
+}
+
 header nav ul {
   list-style-type: none;
   margin: 0;
@@ -52,7 +56,15 @@ header nav ul {
   padding-left: 35px;
 }
 
-.hero .scroll-down a {
+.hero-image {
+  box-shadow: 2px 16px 34px 0 #000;
+  display: block;
+  margin: 0 auto 4vh;
+  max-width: 500px;
+  width: 100%;
+}
+
+.hero a.scroll-down {
   background: url("../img/scroll-down.svg") no-repeat top left;
   background-size: 20px 11px;
   display: block;
@@ -73,16 +85,77 @@ header nav ul {
   padding: 35px 0;
 }
 
+.features .feature {
+  margin: 20px 0;
+}
+
+.features .feature img {
+  box-shadow: 0 10px 30px 0 rgba(0,0,0,0.20);
+  border-radius: 8px;
+  margin-bottom: 15px;
+  max-width: 400px;
+  width: 100%;
+}
+
 .wallet {
   background: #eee;
+}
+
+.wallet-screenshots {
+  margin: 10px 0;
+  max-width: 1000px;
+  width: 100%;
 }
 
 .how-it-works {
   border-bottom: 1px solid #eee;
 }
 
+.how-it-works ol {
+  font-size: 14px;
+  margin: 20px 0;
+  padding-left: 20px;
+}
+
+.how-it-works .map {
+  max-width: 1000px;
+  width: 100%;
+}
+
+.use-cases .use-case {
+  margin: 20px 0;
+}
+
+.use-cases .use-case img {
+  margin-bottom: 10px;
+}
+
 .testimonials {
   background: #222;
+}
+
+.testimonials .testimonial-avatar,
+.testimonials .testimonial .quote {
+  display: table-cell;
+  vertical-align: top;
+}
+
+.testimonials .testimonial {
+  margin: 20px 0;
+}
+
+.testimonials .testimonial-avatar {
+  float: left;
+  margin-right: 20px;
+  width: 20%;
+}
+
+.testimonials .quote p {
+  margin-bottom: 5px;
+}
+
+.testimonials .testimonial .quote span {
+  color: #bbb;
 }
 
 footer {
