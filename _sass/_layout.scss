@@ -6,6 +6,7 @@
 
 header {
   background: #222;
+  background-image: url("../img/stars-bg.svg");
   padding: 20px 0;
 }
 
@@ -21,6 +22,7 @@ header nav ul {
 
 .hero {
   background: #222;
+  background-image: url("../img/stars-bg.svg"), linear-gradient(180deg, #222 1%, #3E314E 100%);
   padding: 20px 0;
 }
 

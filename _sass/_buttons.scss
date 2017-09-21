@@ -28,12 +28,15 @@ nav .button {
 }
 
 nav .button a {
-  color: #222;
+  background: #794fa8;
+  border-radius: 6px;
+  color: #fff;
   display: block;
   padding: 12px 30px;
   &:hover,
   &:active {
-    color: #1a1a1a;
+    background: lighten(#794fa8, 5%);
+    color: #eee;
     text-decoration: none;
   }
 }
